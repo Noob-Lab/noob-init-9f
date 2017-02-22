@@ -13,6 +13,10 @@
     "gecko-cli",
     "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liansky/gecko-cli.git"
+  },
   "author": "liansky",
   "license": "MIT",
   "dependencies": {
