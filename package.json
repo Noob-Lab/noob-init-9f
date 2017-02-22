@@ -1,0 +1,24 @@
+{
+  "name": "gecko-cli",
+  "bin": {
+    "gecko-cli": "./bin/gecko"
+  },
+  "version": "1.0.0",
+  "description": "A simple scaffolding tools",
+  "main": "./bin/gecko",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gecko-cli",
+    "cli"
+  ],
+  "author": "liansky",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.9.0"
+  }
+}

@@ -1,0 +1,108 @@
+#!/usr/bin/env node
+'use strict'
+const program = require('commander')
+const pkg = require('../package')
+const chalk = require('chalk')
+
+program
+    .version(pkg.version)
+
+/**
+ * 用例
+ */
+
+program
+    .usage('init <template-name> [project-name]')
+
+program.on('--help', function () {
+  console.log('  Examples:')
+  console.log()
+  console.log(chalk.gray('    # create a new project with an official template'))
+  console.log(`    $ ${pkg.name} init template-name project-name`)
+  console.log()
+})
+
+
+/**
+ * 添加模板
+ */
+
+ program
+   	.command('add')
+   	.description('Add a new template')
+    .alias('a')
+    .action(() => {
+      require('../lib/add')()
+    })
+
+/**
+ * 移除模板
+ */
+
+ program
+   	.command('remove')
+   	.description('Remove a template')
+    .alias('r')
+    .action(() => {
+      require('../lib/remove')()
+    })
+
+/**
+ * 重置模板
+ */
+
+ program
+   	.command('reset')
+   	.description('Reset template')
+    .action(() => {
+      require('../lib/reset')()
+    })
+
+/**
+ * 更新模板
+ */
+
+ program
+   	.command('update')
+   	.description('Update a template')
+    .alias('u')
+    .action(() => {
+      require('../lib/update')()
+    })
+
+
+/**
+ * 列出所有模板
+ */
+
+ program
+   	.command('list')
+   	.description('List all the templates')
+    .alias('l')
+    .action(() => {
+      require('../lib/list')()
+    })
+
+
+/**
+ * 生成项目
+ */
+
+ program
+   	.command('init')
+   	.description('Create a new project')
+    .alias('i')
+    .action(() => {
+      require('../lib/init')()
+    })
+
+
+/**
+ * 输出帮助信息
+ */
+
+function help () {
+  program.parse(process.argv)
+  if (program.args.length < 1) return program.help()
+}
+help()
