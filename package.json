@@ -1,11 +1,11 @@
 {
-  "name": "gecko-cli",
+  "name": "9f",
   "bin": {
-    "gecko-cli": "./bin/gecko"
+    "9f": "./bin/index"
   },
   "version": "1.0.0",
   "description": "A simple scaffolding tools",
-  "main": "./bin/gecko",
+  "main": "./bin/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
