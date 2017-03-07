@@ -3,7 +3,7 @@
   "bin": {
     "9f": "./bin/index"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple scaffolding tools",
   "main": "./bin/index",
   "scripts": {
