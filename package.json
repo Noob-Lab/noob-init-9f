@@ -1,9 +1,9 @@
 {
-  "name": "9f",
+  "name": "noob-init-9f",
   "bin": {
     "9f": "./bin/index"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple scaffolding tools",
   "main": "./bin/index",
   "scripts": {
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:liansky/9f.git"
+    "url": "git@github.com:Noob-Lab/noob-init-9f.git"
   },
   "author": "liansky",
   "license": "MIT",
