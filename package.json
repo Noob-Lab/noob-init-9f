@@ -3,7 +3,7 @@
   "bin": {
     "9f": "./bin/index"
   },
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "A simple scaffolding tools",
   "main": "./bin/index",
   "scripts": {
@@ -23,6 +23,7 @@
     "chalk": "^1.1.3",
     "co": "^4.6.0",
     "co-prompt": "^1.0.0",
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "simple-git": "^1.67.0"
   }
 }

@@ -1,0 +1,28 @@
+{
+  "tpl": {
+    "fis_m_act": {
+      "url": "http://192.168.45.120/web/init.git",
+      "branch": "fis_m_act"
+    },
+    "base": {
+      "url": "http://192.168.45.120/web/init.git",
+      "branch": "base"
+    },
+    "base_pc": {
+      "url": "http://192.168.45.120/web/init.git",
+      "branch": "base_pc"
+    },
+    "fis_base": {
+      "url": "http://192.168.45.120/web/init.git",
+      "branch": "fis_base"
+    },
+    "wk": {
+      "url": "http://192.168.45.120/web/init.git",
+      "branch": "wk"
+    },
+    "fis_app_backbone": {
+      "url": "http://192.168.45.120/web/init.git",
+      "branch": "fis_app_backbone"
+    }
+  }
+}
