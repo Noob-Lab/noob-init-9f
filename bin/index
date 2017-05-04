@@ -3,9 +3,7 @@
 const program = require('commander')
 const pkg = require('../package')
 const chalk = require('chalk')
-const gitPull = require('../lib/downTpl')
 
-// 
 program
     .version(pkg.version)
     .option('-v, --version', 'output the version number')
@@ -36,9 +34,7 @@ program.on('--help', function () {
    	.description('Add a new template')
     .alias('a')
     .action(() => {
-      gitPull(() => {
-        require('../lib/add')()
-      })
+      require('../lib/add')()
     })
 
 /**
@@ -50,9 +46,7 @@ program.on('--help', function () {
    	.description('Remove a template')
     .alias('r')
     .action(() => {
-      gitPull(() => {
-        require('../lib/remove')()
-      })
+      require('../lib/remove')()
     })
 
 /**
@@ -75,9 +69,7 @@ program.on('--help', function () {
    	.description('Update a template')
     .alias('u')
     .action(() => {
-      gitPull(() => {
-        require('../lib/update')()
-      })
+      require('../lib/update')()
     })
 
 
@@ -90,9 +82,7 @@ program.on('--help', function () {
    	.description('List all the templates')
     .alias('l')
     .action(() => {
-      gitPull(() => {
-        require('../lib/list')()
-      })
+      require('../lib/list')()
     })
 
 
@@ -105,9 +95,7 @@ program.on('--help', function () {
    	.description('Create a new project')
     .alias('i')
     .action(() => {
-      gitPull(() => {
-        require('../lib/init')()
-      })
+      require('../lib/init')()
     })
 
 
