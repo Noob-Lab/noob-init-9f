@@ -5,8 +5,11 @@ const pkg = require('../package')
 const chalk = require('chalk')
 const gitPull = require('../lib/downTpl')
 
+// 
 program
     .version(pkg.version)
+    .option('-v, --version', 'output the version number')
+    .parse(process.argv)
 
 /**
  * 用例
